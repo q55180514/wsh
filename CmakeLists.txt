@@ -1,0 +1,20 @@
+cmake_minimum_required(VERSION 3.12)
+
+project(RTP_UDP_Stream)
+
+# 设置C++标准
+set(CMAKE_CXX_STANDARD 11)
+
+# 手动设置FFmpeg的路径
+set(FFMPEG_INCLUDE_DIRS "C:/Program Files/ffmpeg-6.0-full_build/include")
+set(FFMPEG_LIBRARIES "C:/Program Files/ffmpeg-6.0-full_build/avcodec.lib" "C:/Program Files/ffmpeg-6.0-full_build/avformat.lib" "C:/Program Files/ffmpeg-6.0-full_build/avutil.lib")
+
+# 添加服务器可执行文件
+add_executable(server main_server.cpp)
+target_include_directories(server PRIVATE ${FFMPEG_INCLUDE_DIRS})
+target_link_libraries(server PRIVATE ${FFMPEG_LIBRARIES})
+
+# 添加客户端可执行文件
+add_executable(client main_client.cpp)
+target_include_directories(client PRIVATE ${FFMPEG_INCLUDE_DIRS})
+target_link_libraries(client PRIVATE ${FFMPEG_LIBRARIES})
