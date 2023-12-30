@@ -8,7 +8,7 @@ int main(){
  std::cout<<"just for test"<<std::endl;
  
  
- system("pause");
+ return 0;
 
 
 
