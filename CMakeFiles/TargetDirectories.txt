@@ -1,0 +1,3 @@
+/home/wsh/Desktop/test/wsh/CMakeFiles/MyProject.dir
+/home/wsh/Desktop/test/wsh/CMakeFiles/edit_cache.dir
+/home/wsh/Desktop/test/wsh/CMakeFiles/rebuild_cache.dir
