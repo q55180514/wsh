@@ -144,4 +144,5 @@ CMakeFiles/MyProject.dir/main.cpp.o: /home/wsh/Desktop/test/wsh/main.cpp \
  /usr/include/c++/11/bits/locale_facets.tcc \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
- /usr/include/c++/11/bits/istream.tcc
+ /usr/include/c++/11/bits/istream.tcc \
+ /home/wsh/Desktop/test/wsh/CSingleton.h
